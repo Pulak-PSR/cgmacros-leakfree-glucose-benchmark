@@ -5,6 +5,8 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
+> **New:** [`leakfree-benchmark/`](leakfree-benchmark/) holds the leak-free, participant-held-out benchmark and the audit of the released CGMacros CGM series (the released 1-minute series interpolates 15-minute readings and leaks the next reading). The code in `src/` below is the earlier multimodal framework and is unchanged.
+
 A multimodal machine learning framework that forecasts post-meal glucose spikes
 across **multiple time horizons (1h, 3h, 6h)**, combining continuous glucose
 monitoring (CGM) signals, meal macronutrient data, clinical biomarkers, and

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this benchmark or the audit of the CGMacros CGM series, please cite it as below. Please also cite the CGMacros dataset paper (Das et al., Scientific Data, 2025, doi:10.1038/s41597-025-05851-7)."
+title: "CGMacros leak-free participant-held-out benchmark and CGM data audit"
+version: 1.0.0
+license: MIT
+type: software
+authors:
+  - family-names: Saha
+    given-names: Pulak
+    affiliation: "Department of Mathematical Sciences, University of Essex, Colchester, UK"
+    email: pulak2164@gmail.com
+repository-code: "https://github.com/Pulak-PSR/CGMacros-Multimodal-AI-for-Multiple-Horizon-Glucose-Prediction/tree/main/leakfree-benchmark"
+# [TODO: add date-released once the release is tagged]
+keywords:
+  - continuous glucose monitoring
+  - benchmark
+  - data audit
+  - data leakage
+  - CGMacros
