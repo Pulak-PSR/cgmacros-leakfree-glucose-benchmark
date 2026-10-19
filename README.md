@@ -7,7 +7,7 @@
 
 **Leak-free, participant-held-out benchmark for glucose forecasting on CGMacros, plus an audit of the released CGM series.**
 
-Code for the paper *Auditing CGMacros: Interpolated Glucose Series Leak the Future, and a Leak-Free Participant-Held-Out Benchmark for Glucose Forecasting* (Pulak Saha, University of Essex).
+Code for the paper *Auditing CGMacros: Interpolated Glucose Series Leak the Future, and a Leak-Free Participant-Held-Out Benchmark for Glucose Forecasting* (Pulak Saha, Independent Researcher).
 
 ## Key findings
 
@@ -92,4 +92,4 @@ legacy_multimodal/   superseded original dissertation code, kept for the record
 
 ## Maintenance, licence and citation
 
-MIT licence ([`LICENSE`](LICENSE)). Maintained by Pulak Saha (University of Essex, pulak2164@gmail.com). Please report problems or reproduction differences through the [issue tracker](https://github.com/Pulak-PSR/cgmacros-leakfree-glucose-benchmark/issues). Cite the software with [`CITATION.cff`](CITATION.cff) (GitHub shows a "Cite this repository" button) and cite the CGMacros dataset paper (Das et al., *Scientific Data*, 2025, doi:10.1038/s41597-025-05851-7).
+MIT licence ([`LICENSE`](LICENSE)). Maintained by Pulak Saha (Independent Researcher, pulak2164@gmail.com). Please report problems or reproduction differences through the [issue tracker](https://github.com/Pulak-PSR/cgmacros-leakfree-glucose-benchmark/issues). Cite the software with [`CITATION.cff`](CITATION.cff) (GitHub shows a "Cite this repository" button) and cite the CGMacros dataset paper (Das et al., *Scientific Data*, 2025, doi:10.1038/s41597-025-05851-7).

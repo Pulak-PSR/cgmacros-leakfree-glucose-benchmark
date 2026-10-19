@@ -7,7 +7,7 @@ type: software
 authors:
   - family-names: Saha
     given-names: Pulak
-    affiliation: "Department of Mathematical Sciences, University of Essex, Colchester, UK"
+    affiliation: "Independent Researcher"
     email: pulak2164@gmail.com
 repository-code: "https://github.com/Pulak-PSR/cgmacros-leakfree-glucose-benchmark"
 url: "https://github.com/Pulak-PSR/cgmacros-leakfree-glucose-benchmark"
