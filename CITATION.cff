@@ -9,7 +9,8 @@ authors:
     given-names: Pulak
     affiliation: "Department of Mathematical Sciences, University of Essex, Colchester, UK"
     email: pulak2164@gmail.com
-repository-code: "https://github.com/Pulak-PSR/CGMacros-Multimodal-AI-for-Multiple-Horizon-Glucose-Prediction/tree/main/leakfree-benchmark"
+repository-code: "https://github.com/Pulak-PSR/cgmacros-leakfree-glucose-benchmark"
+url: "https://github.com/Pulak-PSR/cgmacros-leakfree-glucose-benchmark"
 # [TODO: add date-released once the release is tagged]
 keywords:
   - continuous glucose monitoring

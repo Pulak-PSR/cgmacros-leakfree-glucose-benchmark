@@ -1,8 +1,18 @@
+# never commit CGMacros data or anything derived row-by-row from it
+data/
+cache/
+results/
+results_smoke/
+_logs/
+figures/
+*.npz
+*.zip
+*.csv.gz
 __pycache__/
 *.pyc
+catboost_info/
 .ipynb_checkpoints/
-.venv/
+_leak_first/
 venv/
 *.egg-info/
-data/
 .env

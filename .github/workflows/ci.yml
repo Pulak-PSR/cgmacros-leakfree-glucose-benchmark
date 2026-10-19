@@ -1,0 +1,21 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Byte-compile all sources
+        run: python -m compileall -q cgmacros_bench scripts
+      - name: Guard against committed data
+        run: |
+          if git ls-files | grep -E '(^|/)(data|cache|results)/|\.npz$|\.zip$|CGMacros-0[0-9]{2}|bio\.csv'; then
+            echo "Data-like files must not be committed"; exit 1
+          fi
