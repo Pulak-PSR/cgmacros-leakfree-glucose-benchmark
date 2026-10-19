@@ -24,7 +24,7 @@ The sensor interval is inferred from the data and has not been confirmed with th
 3. **Provides a leak-free, participant-held-out forecasting benchmark**: native-reading features, 5-fold participant-grouped CV, baselines, paired participant-level statistics, spike endpoints, calibration and HbA1c-group analyses.
 4. **Reproduces every table and figure** of the paper and verifies the numbers (`scripts/verify_results.py`).
 
-**No CGMacros data are included or redistributed.** Download them yourself from PhysioNet and follow the data-use terms on the project page: <https://physionet.org/content/cgmacros/1.0.0/>. This repository must never contain data files (`.gitignore` excludes `data/`, `cache/`, `results/`, `*.npz`, `*.zip`).
+**No CGMacros data are included or redistributed.** Download them yourself from PhysioNet and respect its licence, Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (attribution, non-commercial use, share-alike): <https://physionet.org/content/cgmacros/1.0.0/>. This repository must never contain data files (`.gitignore` excludes `data/`, `cache/`, `results/`, `*.npz`, `*.zip`).
 
 ## Install
 
@@ -92,4 +92,4 @@ legacy_multimodal/   superseded original dissertation code, kept for the record
 
 ## Maintenance, licence and citation
 
-MIT licence ([`LICENSE`](LICENSE)). Maintained by Pulak Saha (Independent Researcher, pulak2164@gmail.com). Please report problems or reproduction differences through the [issue tracker](https://github.com/Pulak-PSR/cgmacros-leakfree-glucose-benchmark/issues). Cite the software with [`CITATION.cff`](CITATION.cff) (GitHub shows a "Cite this repository" button) and cite the CGMacros dataset paper (Das et al., *Scientific Data*, 2025, doi:10.1038/s41597-025-05851-7).
+Code: MIT licence ([`LICENSE`](LICENSE)). The summary-level tables in `expected_results/` are derived from CGMacros and are shared under CC BY-NC-SA 4.0 (see [`expected_results/LICENSE.md`](expected_results/LICENSE.md)). Maintained by Pulak Saha (Independent Researcher, pulak2164@gmail.com). Please report problems or reproduction differences through the [issue tracker](https://github.com/Pulak-PSR/cgmacros-leakfree-glucose-benchmark/issues). Cite the software with [`CITATION.cff`](CITATION.cff) (GitHub shows a "Cite this repository" button) and cite the CGMacros dataset paper (Das et al., *Scientific Data*, 2025, doi:10.1038/s41597-025-05851-7).

@@ -9,7 +9,7 @@ Evaluate glucose-change forecasting from the first 120 minutes of history (CGM, 
 **Not intended for:** dietary, clinical or treatment decisions; claims of clinical-grade accuracy; fairness claims across diabetes status (groups have 14 to 15 people); re-identification or data linkage.
 
 ## Data
-* Source: CGMacros v1.0.0 on PhysioNet, https://physionet.org/content/cgmacros/1.0.0/ (Das et al., *Scientific Data*, 2025). Follow the data-use terms on that page. **This repository contains no CGMacros data and no row-level derivatives.**
+* Source: CGMacros v1.0.0 on PhysioNet, https://physionet.org/content/cgmacros/1.0.0/ (Das et al., *Scientific Data*, 2025). The dataset is open access under CC BY-NC-SA 4.0 (version DOI 10.13026/3z8q-x658): attribution, non-commercial use and share-alike are required. **This repository contains no CGMacros data and no row-level derivatives.**
 * 45 adults (15 healthy, 16 prediabetes, 14 type 2 diabetes); 44 analysed (participant 007 has no regular-grid stretch).
 
 ## Preprocessing (as implemented in `cgmacros_bench/`)
@@ -23,7 +23,7 @@ Evaluate glucose-change forecasting from the first 120 minutes of history (CGM, 
 R2, MAE, skill versus zero-change; spike endpoints (glucose > 140 mg/dL; rise of at least 30 mg/dL) with AUROC, AUPRC, Brier skill and ECE; participant-level bootstrap (1000 resamples, 300 for classification); paired Wilcoxon with Holm correction.
 
 ## Hosting, licence, maintenance
-Hosted on GitHub under the MIT licence. Maintained by the author (Pulak Saha); issues and reproduction reports via the issue tracker. Versioned releases; changes are listed in `CHANGELOG.md`.
+Hosted on GitHub. Code: MIT licence. Summary-level tables in `expected_results/`: CC BY-NC-SA 4.0, matching the dataset. Maintained by the author (Pulak Saha); issues and reproduction reports via the issue tracker. Versioned releases; changes are listed in `CHANGELOG.md`.
 
 ## Known limitations
 The 15-minute native interval is inferred from the data, not confirmed with the creators or manufacturer; a single fold assignment and seed; targets for origins between native readings are interpolated values; one dataset, 44 participants.
