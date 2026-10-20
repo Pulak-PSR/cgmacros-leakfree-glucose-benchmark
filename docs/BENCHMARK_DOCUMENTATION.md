@@ -23,7 +23,7 @@ Evaluate glucose-change forecasting from the first 120 minutes of history (CGM, 
 R2, MAE, skill versus zero-change; spike endpoints (glucose > 140 mg/dL; rise of at least 30 mg/dL) with AUROC, AUPRC, Brier skill and ECE; participant-level bootstrap (1000 resamples, 300 for classification); paired Wilcoxon with Holm correction.
 
 ## Hosting, licence, maintenance
-Hosted on GitHub. Code: MIT licence. Summary-level tables in `expected_results/`: CC BY-NC-SA 4.0, matching the dataset. Maintained by the author (Pulak Saha); issues and reproduction reports via the issue tracker. Versioned releases; changes are listed in `CHANGELOG.md`.
+Hosted on GitHub. Code: MIT licence. No result tables derived from the data are included. Maintained by the author (Pulak Saha); issues and reproduction reports via the issue tracker. Versioned releases; changes are listed in `CHANGELOG.md`.
 
 ## Known limitations
 The 15-minute native interval is inferred from the data, not confirmed with the creators or manufacturer; a single fold assignment and seed; targets for origins between native readings are interpolated values; one dataset, 44 participants.

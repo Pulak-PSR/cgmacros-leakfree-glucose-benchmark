@@ -22,7 +22,7 @@ The sensor interval is inferred from the data and has not been confirmed with th
 1. **Audits** the released CGMacros Libre CGM series (`scripts/run_audit.py`; `scripts/audit_csv.py` works on any regularly resampled column).
 2. **Quantifies the leak** in a controlled experiment (`scripts/run_leak_experiment.py`).
 3. **Provides a leak-free, participant-held-out forecasting benchmark**: native-reading features, 5-fold participant-grouped CV, baselines, paired participant-level statistics, spike endpoints, calibration and HbA1c-group analyses.
-4. **Reproduces every table and figure** of the paper and verifies the numbers (`scripts/verify_results.py`).
+4. **Reproduces every table and figure** of the paper; the paper's tables are the reference values for a rerun.
 
 **No CGMacros data are included or redistributed.** Download them yourself from PhysioNet and respect its licence, Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (attribution, non-commercial use, share-alike): <https://physionet.org/content/cgmacros/1.0.0/>. This repository must never contain data files (`.gitignore` excludes `data/`, `cache/`, `results/`, `*.npz`, `*.zip`).
 
@@ -57,7 +57,6 @@ All scripts write to `results/` (`--out`) and take `--smoke` for a quick test (1
 | `python scripts/run_leak_experiment.py` | `leak_summary.csv`, `leak_delta.csv`, `leak_tests.csv`, `leak_per_participant.csv` (leak quantification; paper Section 3.5, Table 2, Figure 2) | about 75 min |
 | `python scripts/run_extra.py` | `summary_extra.csv`, `tests_extra.csv`, `cal_summary.csv`, `by_status.csv`, `tuned_choices.csv` (LSTM/Transformer, tuned CatBoost, calibration, HbA1c groups) | about 68 min |
 | `python scripts/make_figures.py` | `figures/fig_r2.pdf`, `fig_ablation.pdf`, `fig_shap.pdf`, `fig_leak.pdf` | seconds |
-| `python scripts/verify_results.py` | compares `results/` with `expected_results/` (the numbers in the paper) | seconds |
 
 Run `run_benchmark.py` before `run_extra.py` (the latter reads `results/per_participant.csv`).
 
@@ -73,7 +72,7 @@ Key design points (details in the paper and in `cgmacros_bench/features.py`):
 
 ## Reproducibility notes
 
-Results use seed 42 and `BENCH_THREADS=8` (CPU threads of the boosted trees and torch). Different thread counts or library versions can change the third decimal. `verify_results.py` reports the largest deviation per file.
+Results use seed 42 and `BENCH_THREADS=8` (CPU threads of the boosted trees and torch). Different thread counts or library versions can change the third decimal. Compare your `results/*.csv` with the tables in the paper (Appendix tables list the main numbers).
 
 ## Intended and non-intended uses
 
@@ -84,7 +83,6 @@ Intended: evaluating glucose-change forecasting under a leak-free, participant-h
 ```
 cgmacros_bench/      library: data loading, native-reading detection, features, sampling/folds, models, statistics
 scripts/             one script per result (table above)
-expected_results/    summary-level CSVs behind the paper's tables (no row-level data), for verification
 docs/                data access guide and benchmark documentation (datasheet)
 legacy_multimodal/   superseded original dissertation code, kept for the record
 .github/             CI (syntax and import check) and issue templates
@@ -92,4 +90,4 @@ legacy_multimodal/   superseded original dissertation code, kept for the record
 
 ## Maintenance, licence and citation
 
-Code: MIT licence ([`LICENSE`](LICENSE)). The summary-level tables in `expected_results/` are derived from CGMacros and are shared under CC BY-NC-SA 4.0 (see [`expected_results/LICENSE.md`](expected_results/LICENSE.md)). Maintained by Pulak Saha (Independent Researcher, pulak2164@gmail.com). Please report problems or reproduction differences through the [issue tracker](https://github.com/Pulak-PSR/cgmacros-leakfree-glucose-benchmark/issues). Cite the software with [`CITATION.cff`](CITATION.cff) (GitHub shows a "Cite this repository" button) and cite the CGMacros dataset paper (Das et al., *Scientific Data*, 2025, doi:10.1038/s41597-025-05851-7).
+Code: MIT licence ([`LICENSE`](LICENSE)). Maintained by Pulak Saha (Independent Researcher, pulak2164@gmail.com). Please report problems or reproduction differences through the [issue tracker](https://github.com/Pulak-PSR/cgmacros-leakfree-glucose-benchmark/issues). Cite the software with [`CITATION.cff`](CITATION.cff) (GitHub shows a "Cite this repository" button) and cite the CGMacros dataset paper (Das et al., *Scientific Data*, 2025, doi:10.1038/s41597-025-05851-7).
