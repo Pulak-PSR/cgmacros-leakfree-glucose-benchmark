@@ -12,4 +12,4 @@ labels: ""
 
 **What you expected / what happened:**
 
-Please do not attach CGMacros data files or row-level derivatives; the dataset licence does not allow redistribution.
+Please do not attach CGMacros data files or row-level derivatives; please share only your own result numbers.
