@@ -26,4 +26,4 @@ R2, MAE, skill versus zero-change; spike endpoints (glucose > 140 mg/dL; rise of
 Hosted on GitHub. Code: MIT licence. No result tables derived from the data are included. Maintained by the author (Pulak Saha); issues and reproduction reports via the issue tracker. Versioned releases; changes are listed in `CHANGELOG.md`.
 
 ## Known limitations
-The 15-minute native interval is inferred from the data, not confirmed with the creators or manufacturer; a single fold assignment and seed; targets for origins between native readings are interpolated values; one dataset, 44 participants.
+The 15-minute interval and the linear interpolation are stated in the dataset paper and verified here in the files, but file-level details (which rows are native readings, irregular timestamps in 10 participants) are not confirmed with the creators; a single fold assignment and seed; targets for origins between native readings are interpolated values; one dataset, 44 participants.

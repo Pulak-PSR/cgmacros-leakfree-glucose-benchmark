@@ -15,7 +15,7 @@ Code for the paper *Auditing CGMacros: Interpolated Glucose Series Leak the Futu
 * **The leak inflates short-horizon accuracy a lot.** With participants, folds, origins and models held fixed and only the CGM features changed, pooled R2 of CatBoost (all features) rises from 0.49, 0.38 and 0.35 (native readings) to 0.86, 0.63 and 0.42 (interpolated series, same features) and 0.89, 0.71 and 0.46 (minute-level features) at +15, +30 and +60 minutes. At 3 and 6 hours there is no benefit.
 * **Leak-free reference results.** CatBoost with all features reaches R2 of 0.35, 0.47 and 0.41 at 1, 3 and 6 hours; a CGM-only linear model already explains 0.23 to 0.34, and activity, clinical and image features add at most 0.03.
 
-The sensor interval is inferred from the data and has not been confirmed with the dataset creators or the manufacturer. This work does not claim that any published study is affected.
+The 15-minute sampling and the linear interpolation are stated in the CGMacros dataset paper (Das et al., 2025); this work verifies them in the released files and quantifies what they imply for forecasting. File-level details (for example which rows are native readings) have not been confirmed with the dataset creators. This work does not claim that any published study is affected.
 
 ## What it does
 
