@@ -7,7 +7,7 @@
 
 **Leak-free, participant-held-out benchmark for glucose forecasting on CGMacros, plus an audit of the released CGM series.**
 
-Code for the paper *Auditing CGMacros: Interpolated Glucose Series Leak the Future, and a Leak-Free Participant-Held-Out Benchmark for Glucose Forecasting* (Pulak Saha, Independent Researcher).
+Code for the paper *Auditing CGMacros: Interpolated Glucose Series Leak the Future, and a Leak-Free Participant-Held-Out Benchmark for Glucose Forecasting* (Pulak Saha, Independent Researcher). Preprint: https://doi.org/10.5281/zenodo.23526696.
 
 ## Key findings
 
@@ -90,4 +90,4 @@ legacy_multimodal/   superseded original dissertation code, kept for the record
 
 ## Maintenance, licence and citation
 
-Code: MIT licence ([`LICENSE`](LICENSE)). Maintained by Pulak Saha (Independent Researcher, pulak2164@gmail.com). Please report problems or reproduction differences through the [issue tracker](https://github.com/Pulak-PSR/cgmacros-leakfree-glucose-benchmark/issues). Cite the software with [`CITATION.cff`](CITATION.cff) (GitHub shows a "Cite this repository" button) and cite the CGMacros dataset paper (Das et al., *Scientific Data*, 2025, doi:10.1038/s41597-025-05851-7).
+Code: MIT licence ([`LICENSE`](LICENSE)). Maintained by Pulak Saha (Independent Researcher, pulak2164@gmail.com). Please report problems or reproduction differences through the [issue tracker](https://github.com/Pulak-PSR/cgmacros-leakfree-glucose-benchmark/issues). Preprint: [Auditing CGMacros: Interpolated Glucose Series Leak the Future, and a Leak-Free Participant-Held-Out Benchmark for Glucose Forecasting](https://doi.org/10.5281/zenodo.23526696) (Zenodo, DOI 10.5281/zenodo.23526696). Cite the software with [`CITATION.cff`](CITATION.cff) (GitHub shows a "Cite this repository" button) and cite the CGMacros dataset paper (Das et al., *Scientific Data*, 2025, doi:10.1038/s41597-025-05851-7).
